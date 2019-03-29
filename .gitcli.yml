@@ -1,0 +1,10 @@
+merge_ignores:
+  - Pods/
+  - Podfile
+  - Podfile.lock
+conflict_resolve_by_self_files:
+  - LvmmPodMerge/Podfile
+  - LvmmPodMerge/Podfile.lock
+  - LvmmPodMerge/LvmmPodMerge.lock
+conflict_resolve_by_others_files:
+  - 
