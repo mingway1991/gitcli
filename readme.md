@@ -1,7 +1,6 @@
-创建setup.py，填写相关配置
+pyinstaller打包可执行文件
+ 
+1.创建spec文件
 
-激活虚拟环境在当前目录下执行 pip install --editable .
-
-在虚拟环境目录下即可使用该命令
-
-如果需要配置合并忽略和以某一方解决冲突，需在版本库根目录加入.gitcli.yml，依照本仓库的样例进行配置
+2.执行命令生成可执行文件
+    pyinstaller gitcli.spec --clean

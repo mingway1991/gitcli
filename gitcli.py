@@ -13,13 +13,10 @@ sys.setdefaultencoding('utf8')
 
 '''
 分支操作
-gitcli branch switch 'branch' 切换分支，并拉取最新提交
-gitcli branch create 'branch' 创建新分支，同步到远端
-gitcli branch delete 'branch' 删除分支，同步到远端
-gitcli branch clean 只保留master、release、develop
-
-信息查看
-gitcli info 查看信息
+gitcli switch-branch 'branch' 切换分支，并拉取最新提交
+gitcli create-branch create 'branch' 创建新分支，同步到远端
+gitcli delete-branch 'branch' 删除分支，同步到远端
+gitcli clean-branches 只保留当前分支、master、release、develop
 
 合并
 gitcli merge 'branch' 合并某个分支，支持合并远端分支，(忽略合并某些文件或文件夹(从某个文件中读取配置)，某些冲突自动解决（从某个文件中读取配置）)
