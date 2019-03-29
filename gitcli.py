@@ -31,7 +31,7 @@ class CatchAllExceptions(click.Group):
         try:
             return self.main(*args, **kwargs)
         except Exception as exc:
-            click.echo('gitcli error: %s' % exc)
+            click.secho('gitcli error: %s' % exc, fg='red')
 
 @click.group(cls=CatchAllExceptions)
 def gitcli():
@@ -41,67 +41,67 @@ def gitcli():
 @click.option('-p', '--path', default=os.getcwd(), help='工作目录')
 @click.option('-b', '--branch', help='分支名')
 def switch_branch(path, branch):
-    click.echo('切换分支')
-    click.echo('工作目录: %s' % (path))
+    click.secho('切换分支')
+    click.secho('工作目录: %s' % (path))
     if branch is None:
-        raise Exception('缺少参数branch')
-    click.echo('分支名：%s' % (branch))
+        raise Exception('缺少参数branch', fg='red')
+    click.secho('分支名：%s' % (branch))
     errCode, stdMsg, errMsg = run_command('git checkout %s' % (branch), path)
     if errCode == 0:
-        click.echo('切换分支成功')
+        click.secho('切换分支成功', fg='green')
     else:
-        click.echo('切换分支失败')
+        click.secho('切换分支失败', fg='red')
         raise Exception(errMsg)
     errCode, stdMsg, errMsg = run_command('git pull', path)
     if errCode == 0:
-        click.echo('拉取成功')
+        click.secho('拉取成功', fg='green')
     else:
-        click.echo('拉取失败')
+        click.secho('拉取失败', fg='red')
         raise Exception(errMsg)
 
 @click.command(help='创建新分支并推送到远端')
 @click.option('-p', '--path', default=os.getcwd(), help='工作目录')
 @click.option('-b', '--branch', help='分支名')
 def create_branch(path, branch):
-    click.echo('创建新分支')
-    click.echo('工作目录: %s' % (path))
+    click.secho('创建新分支')
+    click.secho('工作目录: %s' % (path))
     if branch is None:
-        raise Exception('缺少参数branch')
-    click.echo('分支名：%s' % (branch))
+        raise Exception('缺少参数branch', fg='red')
+    click.secho('分支名：%s' % (branch))
     errCode, stdMsg, errMsg = run_command('git branch %s' % (branch), path)
     if errCode == 0:
-        click.echo('创建新分支成功')
+        click.secho('创建新分支成功', fg='green')
     else:
-        click.echo('创建新分支失败')
+        click.secho('创建新分支失败', fg='red')
         raise Exception(errMsg)
     errCode, stdMsg, errMsg = run_command('git push -u origin %s' % (branch), path)
     if errCode == 0:
-        click.echo('新分支推送远端成功')
+        click.secho('新分支推送远端成功', fg='green')
     else:
-        click.echo('新分支推送远端失败')
+        click.secho('新分支推送远端失败', fg='red')
         raise Exception(errMsg)
 
 @click.command(help='删除分支')
 @click.option('-p', '--path', default=os.getcwd(), help='工作目录')
 @click.option('-b', '--branch', help='分支名')
 def delete_branch(path, branch):
-    click.echo('删除分支')
-    click.echo('工作目录: %s' % (path))
+    click.secho('删除分支')
+    click.secho('工作目录: %s' % (path))
     if branch is None:
-        raise Exception('缺少参数branch')
-    click.echo('分支名：%s' % (branch))
+        raise Exception('缺少参数branch', fg='red')
+    click.secho('分支名：%s' % (branch))
     errCode, stdMsg, errMsg = run_command('git branch -D %s' % (branch), path)
     if errCode == 0:
-        click.echo('删除分支成功')
+        click.secho('删除分支成功', fg='green')
     else:
-        click.echo('删除分支失败')
+        click.secho('删除分支失败', fg='red')
         raise Exception(errMsg)
 
 @click.command(help='清理分支，保留当前分支\nmaster\nrelease\ndevelop')
 @click.option('-p', '--path', default=os.getcwd(), help='工作目录')
 def clean_branches(path):
-    click.echo('清理分支')
-    click.echo('工作目录: %s' % (path))
+    click.secho('清理分支')
+    click.secho('工作目录: %s' % (path))
     errCode, stdMsg, errMsg = run_command('git branch', path)
     if errCode == 0:
         local_branches = stdMsg.split('\n')
@@ -118,36 +118,36 @@ def clean_branches(path):
                 errCode, stdMsg, errMsg = run_command('git branch -D %s' % (local_branch_name), path)
                 if errCode == 0:
                     has_delete_branch = True
-                    click.echo('删除分支%s成功' % (local_branch_name))
+                    click.secho('删除分支%s成功' % (local_branch_name), fg='green')
                 else:
-                    click.echo('删除分支%s失败' % (local_branch_name))
+                    click.secho('删除分支%s失败' % (local_branch_name), fg='red')
                     raise Exception(errMsg)
         if has_delete_branch is False:
-            click.echo('没有需要删除的分支')
+            click.secho('没有需要删除的分支', fg='green')
         errCode, stdMsg, errMsg = run_command('git branch', path)
         if errCode == 0:
-            click.echo('本地分支列表：')
+            click.secho('本地分支列表：')
             local_branches = stdMsg.split('\n')
             while '' in local_branches:
                 local_branches.remove('')
             for local_branch in local_branches:
-                click.echo(local_branch)
+                click.secho(local_branch)
         else:
-            click.echo('列出分支失败')
+            click.secho('列出分支失败', fg='red')
             raise Exception(errMsg)
     else:
-        click.echo('列出分支失败')
+        click.secho('列出分支失败', fg='red')
         raise Exception(errMsg)
 
 @click.command(help='合并分支')
 @click.option('-p', '--path', default=os.getcwd(), help='工作目录')
 @click.option('-b', '--branch', help='分支名')
 def merge(path, branch):
-    click.echo('合并分支')
-    click.echo('工作目录: %s' % (path))
+    click.secho('合并分支')
+    click.secho('工作目录: %s' % (path))
     if branch is None:
-        raise Exception('缺少参数branch')
-    click.echo('分支名：%s' % (branch))
+        raise Exception('缺少参数branch', fg='red')
+    click.secho('分支名：%s' % (branch))
     #读取配置文件
     yml_path = os.path.join(path,'.gitcli.yml')
     merge_ignores = []
@@ -162,21 +162,21 @@ def merge(path, branch):
             conflict_resolve_by_self_files.extend(temp['conflict_resolve_by_self_files'])
         if temp.has_key('conflict_resolve_by_others_files'):
             conflict_resolve_by_others_files.extend(temp['conflict_resolve_by_others_files'])
-    click.echo('.gitcli.yml中配置的合并忽略文件：%s' % (merge_ignores))
-    click.echo('.gitcli.yml中配置的冲突使用自己解决的文件：%s' % (conflict_resolve_by_self_files))
-    click.echo('.gitcli.yml中配置的冲突使用对方解决的文件：%s' % (conflict_resolve_by_others_files))
+    click.secho('.gitcli.yml中配置的合并忽略文件：%s' % (merge_ignores))
+    click.secho('.gitcli.yml中配置的冲突使用自己解决的文件：%s' % (conflict_resolve_by_self_files))
+    click.secho('.gitcli.yml中配置的冲突使用对方解决的文件：%s' % (conflict_resolve_by_others_files))
     run_command('git merge %s --no-commit --no-ff' % (branch), path)
     for merge_ignore in merge_ignores:
         errCode, stdMsg, errMsg = run_command('git checkout HEAD -- %s && git reset HEAD %s' % (merge_ignore, merge_ignore), path)
         if errCode == 0:
-            click.echo('合并忽略文件：%s' % (merge_ignore))
+            click.secho('合并忽略文件：%s' % (merge_ignore))
         else:
-            click.echo('合并忽略文件：%s %s' % (merge_ignore, errMsg))
+            click.secho('合并忽略文件：%s %s' % (merge_ignore, errMsg))
     errCode, stdMsg, errMsg = run_command('git clean -df', path)
     if errCode == 0:
-        click.echo('清理不在版本库文件成功')
+        click.secho('清理不在版本库文件成功', fg='green')
     else:
-        click.echo('清理不在版本库文件失败')
+        click.secho('清理不在版本库文件失败', fg='red')
     errCode, stdMsg, errMsg = run_command('GIT_PAGER='' git diff --name-only --diff-filter=U', path)
     conflict_files = stdMsg.split('\n')
     while '' in conflict_files:
@@ -184,7 +184,7 @@ def merge(path, branch):
     cannot_fix_conflict_files = []
     if len(conflict_files) != 0:
         #处理冲突
-        click.echo('冲突文件列表:\n%s' % (stdMsg))
+        click.secho('冲突文件列表:\n%s' % (stdMsg))
         for conflict_file in conflict_files:
             conflict_file_path = os.path.join(path,conflict_file)
             if conflict_file in conflict_resolve_by_self_files:
@@ -244,9 +244,9 @@ def merge(path, branch):
     errCode, stdMsg, errMsg = run_command(
             'git add . && git commit -m \'gitcli: merge from %s\' && git push' % (branch), path)
     if errCode == 0:
-        click.echo('合并提交成功')
+        click.secho('合并提交成功', fg='green')
     else:
-        click.echo('合并提交失败 %s' % (errMsg))
+        click.secho('合并提交失败 %s' % (errMsg), fg='red')
 
 gitcli.add_command(switch_branch)
 gitcli.add_command(create_branch)
@@ -255,4 +255,4 @@ gitcli.add_command(clean_branches)
 gitcli.add_command(merge)
 
 if __name__ == '__main__':
-    gitcli(obj={})
+    gitcli()
