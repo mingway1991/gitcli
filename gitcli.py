@@ -174,6 +174,10 @@ def merge(path, branch):
         click.secho('清理不在版本库文件成功', fg='green')
     else:
         click.secho('清理不在版本库文件失败', fg='red')
+    # 移除暂存区
+    errCode, stdMsg, errMsg = run_command('git reset', path)
+    if errCode != 0:
+        raise Exception('移除暂存区出错:%s' % (errMsg))
     errCode, stdMsg, errMsg = run_command('GIT_PAGER='' git diff --name-only', path)
     modify_files = stdMsg.split('\n')
     while '' in modify_files:
@@ -181,6 +185,7 @@ def merge(path, branch):
     if len(modify_files) == 0:
         click.secho('没有文件需要合并', fg='green')
         return
+    #列出修改文件
     errCode, stdMsg, errMsg = run_command('GIT_PAGER='' git diff --name-only --diff-filter=U', path)
     conflict_files = stdMsg.split('\n')
     while '' in conflict_files:
