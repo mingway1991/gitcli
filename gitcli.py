@@ -259,7 +259,7 @@ def merge(path, branch):
     while '' in modify_files:
         modify_files.remove('')
     for modify_file in modify_files:
-        errCode, stdMsg, errMsg = run_command('git add %s' % (modify_file), path)
+        errCode, stdMsg, errMsg = run_command('git add \'%s\'' % (modify_file), path)
         if errCode != 0:
             raise Exception('添加文件到缓存区失败:%s' % (errMsg))
     # git commit

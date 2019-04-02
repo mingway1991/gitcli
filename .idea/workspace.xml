@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="905c2b10-d3aa-4405-88b3-ce7cd7642526" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/gitcli/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/gitcli/PKG-00.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/gitcli/PYZ-00.pyz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitcli.py" beforeDir="false" afterPath="$PROJECT_DIR$/gitcli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runshell.py" beforeDir="false" afterPath="$PROJECT_DIR$/runshell.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +17,8 @@
       <file leaf-file-name="gitcli.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gitcli.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="249" column="57" lean-forward="true" selection-start-line="249" selection-start-column="57" selection-end-line="249" selection-end-column="57" />
+            <state relative-caret-position="624">
+              <caret line="262" column="24" lean-forward="true" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
               <folding>
                 <element signature="e#46#55#0" expanded="true" />
               </folding>
@@ -34,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/runshell.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -79,9 +75,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="266" />
-    <option name="y" value="45" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="224" />
+    <option name="y" value="60" />
     <option name="width" value="1581" />
     <option name="height" value="965" />
   </component>
@@ -136,7 +132,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="266" y="45" width="1581" height="965" extended-state="0" />
+    <frame x="48" y="23" width="1872" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -145,8 +141,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2556213" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18258609" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.13340448" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1568306" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -174,6 +170,40 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gitcli.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3735">
+          <caret line="249" column="57" selection-start-line="249" selection-start-column="57" selection-end-line="249" selection-end-column="57" />
+          <folding>
+            <element signature="e#46#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runshell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitcli.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3735">
+          <caret line="249" column="57" selection-start-line="249" selection-start-column="57" selection-end-line="249" selection-end-column="57" />
+          <folding>
+            <element signature="e#46#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runshell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -275,11 +305,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="75">
@@ -290,18 +315,23 @@
           </second_editor>
         </state>
       </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runshell.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gitcli.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="249" column="57" lean-forward="true" selection-start-line="249" selection-start-column="57" selection-end-line="249" selection-end-column="57" />
+        <state relative-caret-position="624">
+          <caret line="262" column="24" lean-forward="true" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
           <folding>
             <element signature="e#46#55#0" expanded="true" />
           </folding>
