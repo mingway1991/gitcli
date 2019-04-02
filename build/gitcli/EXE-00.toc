@@ -202,7 +202,7 @@
  [],
  False,
  False,
- 1554191969,
+ 1554192455,
  [('run',
    '/Users/shimingwei/workspace/gitcli/venv/lib/python2.7/site-packages/PyInstaller/bootloader/Darwin-64bit/run',
    'EXECUTABLE')])

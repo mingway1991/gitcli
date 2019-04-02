@@ -170,7 +170,12 @@ def merge(path, branch):
     click.secho('.gitcli.yml中配置的合并忽略文件：%s' % (merge_ignores))
     click.secho('.gitcli.yml中配置的冲突使用自己解决的文件：%s' % (conflict_resolve_by_self_files))
     click.secho('.gitcli.yml中配置的冲突使用对方解决的文件：%s' % (conflict_resolve_by_others_files))
-    run_command('git merge %s --no-commit --no-ff' % (branch), path)
+    errCode, stdMsg, errMsg = run_command('git merge %s --no-commit --no-ff' % (branch), path)
+    if errCode == 0 and stdMsg == 'Already up to date.\n':
+        click.secho('不需要合并', fg='green')
+        return
+    elif errCode != 0:
+        raise Exception('merge失败:%s' % (errMsg))
     for merge_ignore in merge_ignores:
         errCode, stdMsg, errMsg = run_command('git checkout HEAD -- %s && git reset HEAD %s' % (merge_ignore, merge_ignore), path)
         if errCode == 0:
@@ -271,8 +276,7 @@ def merge(path, branch):
     all_modify_files.extend(staged_modify_files)
     # 判断是否没有修改文件（如果是解决过冲突后无文件修改不在此范围内）
     if len(all_modify_files) == 0 and not is_resolve_conflict:
-        click.secho('没有文件需要合并', fg='green')
-        return
+        click.secho('没有文件修改', fg='green')
     # git commit
     errCode, stdMsg, errMsg = run_command('git commit -m \'gitcli: merge from %s\'' % (branch), path)
     if errCode == 0:
