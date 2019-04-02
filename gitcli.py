@@ -145,7 +145,7 @@ def merge(path, branch):
     if branch is None:
         raise Exception('缺少参数branch', fg='red')
     click.secho('分支名：%s' % (branch))
-    #读取配置文件
+    # 读取配置文件
     yml_path = os.path.join(path,'.gitcli.yml')
     merge_ignores = []
     conflict_resolve_by_self_files = []
@@ -178,6 +178,7 @@ def merge(path, branch):
     errCode, stdMsg, errMsg = run_command('git reset', path)
     if errCode != 0:
         raise Exception('移除暂存区出错:%s' % (errMsg))
+    # 列出修改文件
     errCode, stdMsg, errMsg = run_command('GIT_PAGER='' git diff --name-only', path)
     modify_files = stdMsg.split('\n')
     while '' in modify_files:
@@ -185,19 +186,19 @@ def merge(path, branch):
     if len(modify_files) == 0:
         click.secho('没有文件需要合并', fg='green')
         return
-    #列出修改文件
+    # 列出冲突文件
     errCode, stdMsg, errMsg = run_command('GIT_PAGER='' git diff --name-only --diff-filter=U', path)
     conflict_files = stdMsg.split('\n')
     while '' in conflict_files:
         conflict_files.remove('')
     cannot_fix_conflict_files = []
     if len(conflict_files) != 0:
-        #处理冲突
+        # 处理冲突
         click.secho('冲突文件列表:\n%s' % (stdMsg))
         for conflict_file in conflict_files:
             conflict_file_path = os.path.join(path,conflict_file)
             if conflict_file in conflict_resolve_by_self_files:
-                #使用自己解决
+                # 使用自己解决
                 newcontent=''
                 file_obj = open(conflict_file_path)
                 all_lines = file_obj.readlines()
@@ -221,8 +222,9 @@ def merge(path, branch):
                     else:
                         newcontent+=line
                 writefile(conflict_file_path, newcontent)
+                click.secho('使用自己解决冲突成功:%s' % (conflict_file), fg='green')
             elif conflict_file in conflict_resolve_by_others_files:
-                #使用对方解决
+                # 使用对方解决
                 newcontent = ''
                 file_obj = open(conflict_file_path)
                 all_lines = file_obj.readlines()
@@ -246,12 +248,28 @@ def merge(path, branch):
                     else:
                         newcontent += line
                 writefile(conflict_file_path, newcontent)
+                click.secho('使用对方解决冲突成功:%s' % (conflict_file), fg='green')
             else:
                 cannot_fix_conflict_files.append(conflict_file)
         if len(cannot_fix_conflict_files) > 0:
             raise Exception('不能解决冲突文件列表:%s' % (cannot_fix_conflict_files))
-    errCode, stdMsg, errMsg = run_command(
-            'git add . && git commit -m \'gitcli: merge from %s\' && git push' % (branch), path)
+    # 列出修改文件
+    errCode, stdMsg, errMsg = run_command('GIT_PAGER='' git diff --name-only', path)
+    modify_files = stdMsg.split('\n')
+    while '' in modify_files:
+        modify_files.remove('')
+    for modify_file in modify_files:
+        errCode, stdMsg, errMsg = run_command('git add %s' % (modify_file), path)
+        if errCode != 0:
+            raise Exception('添加文件到缓存区失败:%s' % (errMsg))
+    # git commit
+    errCode, stdMsg, errMsg = run_command('git commit -m \'gitcli: merge from %s\'' % (branch), path)
+    if errCode == 0:
+        click.secho('commit成功', fg='green')
+    else:
+        click.secho('commit失败 %s' % (errMsg), fg='red')
+    # git push
+    errCode, stdMsg, errMsg = run_command('git push', path)
     if errCode == 0:
         click.secho('合并提交成功', fg='green')
     else:

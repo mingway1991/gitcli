@@ -25,7 +25,7 @@ def run_command(command, cwd):
                      close_fds=True,
                      executable='/bin/sh')
     spent = time.time() - t0
-    print '[debug]:' + command + ' spent: ' + str(spent)
+    print '[shell]:' + command + ' spent: ' + str(spent)
     proc.wait()
     std_out_temp.seek(0)
     err_out_temp.seek(0)

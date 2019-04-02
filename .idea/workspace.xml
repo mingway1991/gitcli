@@ -3,89 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="905c2b10-d3aa-4405-88b3-ce7cd7642526" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/out00-Analysis.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/out00-EXE.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/out00-PKG.pkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/out00-PKG.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/out00-PYZ.pyz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/out00-PYZ.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/out00-Tree.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/EGG-INFO/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/EGG-INFO/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/EGG-INFO/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/EGG-INFO/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/EGG-INFO/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/EGG-INFO/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/EGG-INFO/zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/_markerlib/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/_markerlib/markers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/easy_install.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/pkg_resources.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/archive_util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/alias.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/bdist_egg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/bdist_rpm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/bdist_wininst.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/build_ext.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/build_py.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/develop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/easy_install.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/egg_info.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/install.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/install_egg_info.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/install_lib.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/install_scripts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/register.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/rotate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/saveopts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/sdist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/setopt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/command/upload_docs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/depends.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/dist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/extension.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/lib2to3_ex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/package_index.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/py26compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/py27compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/py31compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/sandbox.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/script (dev).tmpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/script.tmpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/site-patch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/ssl_support.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/svn_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/environment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/py26compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/script-with-bom.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/server.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_bdist_egg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_build_ext.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_develop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_dist_info.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_easy_install.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_egg_info.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_find_packages.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_integration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_markerlib.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_packageindex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_resources.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_sandbox.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_sdist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_svn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/tests/test_upload_docs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/unicode_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/setuptools-5.7-py2.7.egg/setuptools/version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/warngitcli.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gitcli/xref-gitcli.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/gitcli" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gitcli/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/gitcli/EXE-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gitcli/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/gitcli/PKG-00.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gitcli/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/gitcli/PYZ-00.pyz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitcli.py" beforeDir="false" afterPath="$PROJECT_DIR$/gitcli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runshell.py" beforeDir="false" afterPath="$PROJECT_DIR$/runshell.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -99,11 +21,20 @@
       <file leaf-file-name="gitcli.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gitcli.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="225" column="31" lean-forward="true" selection-start-line="225" selection-start-column="31" selection-end-line="225" selection-end-column="31" />
+            <state relative-caret-position="332">
+              <caret line="249" column="57" lean-forward="true" selection-start-line="249" selection-start-column="57" selection-end-line="249" selection-end-column="57" />
               <folding>
                 <element signature="e#46#55#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runshell.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runshell.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -130,11 +61,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/runShell.py" />
-        <option value="$PROJECT_DIR$/runshell.py" />
         <option value="$PROJECT_DIR$/loadfile.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/gitcli.spec" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/runshell.py" />
         <option value="$PROJECT_DIR$/gitcli.py" />
       </list>
     </option>
@@ -149,10 +80,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="701" />
-    <option name="y" value="41" />
-    <option name="width" value="1206" />
-    <option name="height" value="926" />
+    <option name="x" value="266" />
+    <option name="y" value="45" />
+    <option name="width" value="1581" />
+    <option name="height" value="965" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -205,7 +136,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="701" y="41" width="1206" height="926" extended-state="0" />
+    <frame x="266" y="45" width="1581" height="965" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -214,8 +145,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2369727" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24140893" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2556213" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18258609" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -362,15 +293,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runshell.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="105">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gitcli.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="225" column="31" lean-forward="true" selection-start-line="225" selection-start-column="31" selection-end-line="225" selection-end-column="31" />
+        <state relative-caret-position="332">
+          <caret line="249" column="57" lean-forward="true" selection-start-line="249" selection-start-column="57" selection-end-line="249" selection-end-column="57" />
           <folding>
             <element signature="e#46#55#0" expanded="true" />
           </folding>
